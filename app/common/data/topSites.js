@@ -505,7 +505,8 @@ const topSites = [
   'youm7.com',
   '123rf.com',
   'commentcamarche.net',
-  'brave.com'
+  'brave.com',
+  'izi.asia'
 ]
 
 const siteOrderMap = topSites.reduce(

@@ -333,7 +333,7 @@ module.exports.aboutBraveMenuItem = () => {
     label: locale.translation('aboutApp'),
     click: (item, focusedWindow) => {
       ensureAtLeastOneWindow({
-        url: 'about:brave'
+        url: 'about:izi'
       })
     }
   }

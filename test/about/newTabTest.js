@@ -47,7 +47,7 @@ describe('about:newtab tests', function () {
       .addHistorySite({ location: 'about:autofill' })
       .addHistorySite({ location: 'about:blank' })
       .addHistorySite({ location: 'about:bookmarks' })
-      .addHistorySite({ location: 'about:brave' })
+      .addHistorySite({ location: 'about:izi' })
       .addHistorySite({ location: 'about:certerror' })
       .addHistorySite({ location: 'about:config' })
       .addHistorySite({ location: 'about:downloads' })

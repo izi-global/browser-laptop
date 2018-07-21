@@ -4,10 +4,10 @@ const Brave = require('../lib/brave')
 const {urlInput} = require('../lib/selectors')
 const {getTargetAboutUrl} = require('../../js/lib/appUrlUtil')
 
-describe('about:brave tests', function () {
+describe('about:izi tests', function () {
   Brave.beforeAll(this)
   before(function * () {
-    const url = getTargetAboutUrl('about:brave')
+    const url = getTargetAboutUrl('about:izi')
     yield this.app.client
       .waitForUrl(Brave.newTabUrl)
       .waitForBrowserWindow()

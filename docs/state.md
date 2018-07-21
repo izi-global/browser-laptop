@@ -23,7 +23,7 @@ AppStore
     brave: {
       versionInformation: {
         [name]: string
-      } // map of property name to version. used on about:brave. not persisted (removed on save)
+      } // map of property name to version. used on about:izi. not persisted (removed on save)
     },
     history: {
       entries: [object] // used on about:history. not persisted (removed on save)

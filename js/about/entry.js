@@ -25,7 +25,7 @@ switch (getBaseUrl(getSourceAboutUrl(window.location.href))) {
   case 'about:autofill':
     getElementOp = import('./autofill')
     break
-  case 'about:brave':
+  case 'about:izi':
     getElementOp = import('./brave')
     break
   case 'about:bookmarks':

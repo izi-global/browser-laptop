@@ -406,7 +406,7 @@ const updateAboutDetails = (tabId) => {
       })
       sendAboutDetails(tabId, messages.AUTOFILL_CREDIT_CARDS_UPDATED, list)
     }
-  } else if (location === 'about:brave') {
+  } else if (location === 'about:izi') {
     const versionInformation = appState.getIn(['about', 'brave', 'versionInformation'], Immutable.Map())
     sendAboutDetails(tabId, messages.VERSION_INFORMATION_UPDATED, versionInformation)
   }

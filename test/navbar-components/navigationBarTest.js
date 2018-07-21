@@ -1230,7 +1230,7 @@ describe('navigationBar tests', function () {
         .keys('about:bra')
       yield selectsText(this.app.client, 've')
       yield this.app.client.ipcSend('shortcut-focus-url')
-      yield selectsText(this.app.client, 'about:brave')
+      yield selectsText(this.app.client, 'about:izi')
     })
   })
 

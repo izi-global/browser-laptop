@@ -35,9 +35,9 @@ What percentage of the time does it reproduce?
 
 ### Brave Version
 
-**about:brave info:**
+**about:izi info:**
 <!--
-Please open about:brave, copy the version information, and paste it.
+Please open about:izi, copy the version information, and paste it.
 -->
 
 

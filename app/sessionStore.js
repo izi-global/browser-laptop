@@ -559,7 +559,7 @@ const safeGetVersion = (fieldName, getFieldVersion) => {
 }
 
 /**
- * version information (shown on about:brave)
+ * version information (shown on about:izi)
  */
 const setVersionInformation = (immutableData) => {
   const versionFields = [
