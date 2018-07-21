@@ -43,16 +43,16 @@ if (isWindows) {
 var appName
 switch (channel) {
   case 'nightly':
-    appName = 'Brave-Nightly'
+    appName = 'IZI Browser-Nightly'
     break
   case 'developer':
-    appName = 'Brave-Developer'
+    appName = 'IZI Browser-Developer'
     break
   case 'beta':
-    appName = 'Brave-Beta'
+    appName = 'IZI Browser-Beta'
     break
   case 'dev':
-    appName = 'Brave'
+    appName = 'IZI Browser'
     break
   default:
     throw new Error('CHANNEL environment variable must be set to nightly, developer, beta or dev')

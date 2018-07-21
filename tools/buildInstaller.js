@@ -37,16 +37,16 @@ if (!channels[channel]) {
 var appName
 switch (channel) {
   case 'nightly':
-    appName = 'Brave-Nightly'
+    appName = 'IZI Browser-Nightly'
     break
   case 'developer':
-    appName = 'Brave-Developer'
+    appName = 'IZI Browser-Developer'
     break
   case 'beta':
-    appName = 'Brave-Beta'
+    appName = 'IZI Browser-Beta'
     break
   case 'dev':
-    appName = 'Brave'
+    appName = 'IZI Browser'
     break
   default:
     throw new Error('CHANNEL environment variable must be set to nightly, developer, beta or dev')
@@ -199,7 +199,7 @@ if (isDarwin) {
       authors: 'Brave Software',
       loadingGif: 'res/brave_splash_installing.gif',
       setupIcon: `res/${channel}/brave_installer.ico`,
-      iconUrl: `https://raw.githubusercontent.com/brave/browser-laptop/master/res/${channel}/app.ico`,
+      iconUrl: `https://raw.githubusercontent.com/izi-global/izi-browser/master/res/${channel}/app.ico`,
       signWithParams: format('-a -fd sha256 -f "%s" -p "%s"', path.resolve(cert), certPassword),
       noMsi: true,
       exe: `${appName}.exe`,

@@ -4,7 +4,7 @@ import sys
 import os
 import urllib2
 
-url_base = 'https://github.com/brave/browser-laptop/releases/download/%s/%s'
+url_base = 'https://github.com/izi-global/izi-browser/releases/download/%s/%s'
 files = [
   ['Brave.dmg', 'dist/Brave.dmg'],
   ['Brave-0.11.6.zip', 'dist/Brave-0.11.6.zip'],

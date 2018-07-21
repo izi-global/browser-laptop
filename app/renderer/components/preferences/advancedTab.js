@@ -64,6 +64,7 @@ class AdvancedTab extends ImmutableComponent {
 
   get defaultLanguage () {
     return this.props.languageCodes
+      // Not found use default language
       .find((lang) => lang.includes(navigator.language)) || 'en-US'
   }
 

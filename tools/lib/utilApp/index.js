@@ -2,7 +2,7 @@
 
 const electron = require('electron')
 const app = electron.app
-app.setName('brave')
+app.setName('izi-browser')
 
 const path = require('path')
 const rimraf = require('../rimraf')

@@ -94,7 +94,7 @@ if (process.platform === 'win32') {
   const userDataDirSwitch = '--user-data-dir-name=brave-' + channel
   if (channel !== 'dev' && !process.argv.includes(userDataDirSwitch) &&
       !process.argv.includes('--relaunch') &&
-      !process.argv.includes('--user-data-dir-name=brave-development')) {
+      !process.argv.includes('--user-data-dir-name=izi-development')) {
     delete process.env.CHROME_USER_DATA_DIR
     if (isSquirrelFirstRun) {
       app.relaunch({args: [userDataDirSwitch, '--relaunch']})

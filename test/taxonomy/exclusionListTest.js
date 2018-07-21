@@ -71,7 +71,7 @@ describe.skip('smoketest for our exclusion list', function () {
     const filepath =
       require('os').homedir() +
       '/Library/Application Support' +
-      '/brave-development/ledger-rulesV2.leveldb'
+      '/izi-development/ledger-rulesV2.leveldb'
 
     levelup(filepath,
       {},

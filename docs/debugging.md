@@ -79,7 +79,7 @@ An introduction to profiling in React is covered [here](http://benchling.enginee
 
 ## Debugging Session Data
 
-The session data is stored in OS specific user data directories. Within those directories there will be a `brave` directory for release builds and a `brave-development` directory for dev (from NODE_ENV). If you want to use a different directory for dev you can set the environment variable `BRAVE_USER_DATA_DIR` to the directory you want to use. Each test run goes in a new tmp directory inside the OS specific tmpdir. Normally these directories are removed when the test is finished, but if you want to keep them you can the enviroment variable `KEEP_BRAVE_USER_DATA_DIR` to true.
+The session data is stored in OS specific user data directories. Within those directories there will be a `brave` directory for release builds and a `izi-development` directory for dev (from NODE_ENV). If you want to use a different directory for dev you can set the environment variable `BRAVE_USER_DATA_DIR` to the directory you want to use. Each test run goes in a new tmp directory inside the OS specific tmpdir. Normally these directories are removed when the test is finished, but if you want to keep them you can the enviroment variable `KEEP_BRAVE_USER_DATA_DIR` to true.
 
 MacOS
 ~/Library/Application Support/brave

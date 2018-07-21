@@ -10,7 +10,7 @@ TMP_REPO=/tmp/rpm_repo
 
 echo "%_signature gpg
 %_gpg_path $HOME/.gnupg
-%_gpg_name Brave Software
+%_gpg_name iZi Global
 %_gpgbin /usr/bin/gpg" > ~/.rpmmacros
 
 rm -rf $TMP_REPO
