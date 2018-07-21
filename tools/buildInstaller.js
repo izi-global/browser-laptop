@@ -46,7 +46,7 @@ switch (channel) {
     appName = 'IZI Browser-Beta'
     break
   case 'dev':
-    appName = 'IZI Browser'
+    appName = 'IZI'
     break
   default:
     throw new Error('CHANNEL environment variable must be set to nightly, developer, beta or dev')
@@ -74,19 +74,19 @@ const raiseError = (errorMessage) => {
 if (isDarwin || isWindows) {
   const requiredText = 'is required for widevine signing'
   if (!process.env.SIGN_WIDEVINE_PASSPHRASE) {
-    raiseError('SIGN_WIDEVINE_PASSPHRASE ' + requiredText)
+    // raiseError('SIGN_WIDEVINE_PASSPHRASE ' + requiredText)
   }
   if (!process.env.SIGN_WIDEVINE_CERT) {
-    raiseError('SIGN_WIDEVINE_CERT ' + requiredText)
+    // raiseError('SIGN_WIDEVINE_CERT ' + requiredText)
   }
   if (!process.env.SIGN_WIDEVINE_KEY) {
-    raiseError('SIGN_WIDEVINE_KEY ' + requiredText)
+    // raiseError('SIGN_WIDEVINE_KEY ' + requiredText)
   }
 
   // check if widevine script exists
   const fs = require('fs')
   if (!fs.existsSync('tools/signature_generator.py')) {
-    raiseError('`tools/signature_generator.py` ' + requiredText)
+    // raiseError('`tools/signature_generator.py` ' + requiredText)
   }
 }
 
@@ -164,7 +164,7 @@ if (isDarwin) {
   var cert = process.env.CERT || '../brave-authenticode.pfx'
   var certPassword = process.env.CERT_PASSWORD
   if (!certPassword) {
-    raiseError('Certificate password required. Set environment variable CERT_PASSWORD.')
+    // raiseError('Certificate password required. Set environment variable CERT_PASSWORD.')
   }
 
   const getSignCmd = (file) => {
@@ -177,8 +177,9 @@ if (isDarwin) {
   // sign for widevine
   const wvExe = buildDir + `/${appName}.exe`
   cmds = [
-    getSignCmd(wvExe),
-    'python tools/signature_generator.py --input_file "' + wvExe + '" --flag 1'
+    // getSignCmd(wvExe),
+    // 'python tools/signature_generator.py --input_file "' + wvExe + '" --flag 1'
+    'echo "Xin chao"'
   ]
   execute(cmds, {}, (err) => {
     if (err) {
@@ -196,11 +197,11 @@ if (isDarwin) {
       outputDirectory: outDir,
       title: appName,
       name: appName,
-      authors: 'Brave Software',
+      authors: 'Izi Global',
       loadingGif: 'res/brave_splash_installing.gif',
       setupIcon: `res/${channel}/brave_installer.ico`,
-      iconUrl: `https://raw.githubusercontent.com/izi-global/izi-browser/master/res/${channel}/app.ico`,
-      signWithParams: format('-a -fd sha256 -f "%s" -p "%s"', path.resolve(cert), certPassword),
+      iconUrl: `https://raw.githubusercontent.com/brave/browser-laptop/master/res/${channel}/app.ico`,
+      // signWithParams: format('-a -fd sha256 -f "%s" -p "%s"', path.resolve(cert), certPassword),
       noMsi: true,
       exe: `${appName}.exe`,
       setupExe: `${appName}Setup-${arch}.exe`

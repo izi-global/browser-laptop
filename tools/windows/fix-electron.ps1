@@ -17,7 +17,7 @@ if (-Not (Test-Path .\node_modules\electron-prebuilt\dist)) {
 npm run build-package
 
 "INFO: copying the binaries created from package into electron-prebuilt"
-xcopy .\Brave-win32-x64\* .\node_modules\electron-prebuilt\dist\ /Y /S /I /F /R
+xcopy .\IZI-win32-x64\* .\node_modules\electron-prebuilt\dist\ /Y /S /I /F /R
 
 "INFO: Done."
 Read-Host -Prompt "Press Enter to exit"

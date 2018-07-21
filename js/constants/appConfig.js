@@ -6,9 +6,10 @@ const {getTargetAboutUrl} = require('../lib/appUrlUtil')
 const webrtcConstants = require('./webrtcConstants')
 
 // BRAVE_UPDATE_HOST should be set to the host name for the auto-updater server
-const updateHost = process.env.BRAVE_UPDATE_HOST || 'https://laptop-updates.brave.com'
-const winUpdateHost = process.env.BRAVE_WIN_UPDATE_HOST || 'https://download.brave.com'
-const adHost = process.env.AD_HOST || 'https://oip.brave.com'
+const updateHost = process.env.BRAVE_UPDATE_HOST || 'https://browser-updates.izi.asia'
+// https://laptop-updates.brave.com
+const winUpdateHost = process.env.BRAVE_WIN_UPDATE_HOST || 'https://download.izi.asia'
+const adHost = process.env.AD_HOST || 'https://oip.izi.asia'
 const isTest = process.env.NODE_ENV === 'test'
 
 const buildConfig = require('./buildConfig')
@@ -17,8 +18,8 @@ const {fullscreenOption, autoplayOption, tabPreviewTiming} = require('../../app/
 const Channel = require('../../app/channel')
 
 module.exports = {
-  name: 'Brave',
-  contactUrl: 'mailto:support+laptop@brave.com',
+  name: 'IZI Browser',
+  contactUrl: 'mailto:contact@izi.asia',
   quitTimeout: isTest ? 3 * 1000 : 10 * 1000,
   sessionSaveInterval: process.env.BRAVE_SESSION_SAVE_INTERVAL * 1000 || 1000 * 60 * 5,
   resourceNames: {
@@ -143,7 +144,7 @@ module.exports = {
     'adblock.customRules': '',
     'general.language': null, // null means to use the OS lang
     'general.startup-mode': 'lastTime',
-    'general.homepage': 'https://www.brave.com',
+    'general.homepage': 'https://www.izi.asia',
     'general.newtab-mode': 'newTabPage',
     'general.show-home-button': false,
     'general.autohide-menu': true,

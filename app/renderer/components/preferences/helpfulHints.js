@@ -22,7 +22,7 @@ class HelpfulHints extends ImmutableComponent {
       <div className={css(styles.hints, styles.white)} data-l10n-id={`hint${this.props.hintNumber}`} />
       <div className={css(styles.helpfulHintsBottom)}>
         <a className={css(styles.white)}
-          href='https://community.brave.com/'
+          href='https://community.izi.asia/'
           data-l10n-id='submitFeedback'
           rel='noopener' target='_blank' />
       </div>

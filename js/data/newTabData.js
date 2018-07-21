@@ -2,52 +2,52 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-const {getBraveExtUrl} = require('../lib/appUrlUtil')
+const { getBraveExtUrl } = require('../lib/appUrlUtil')
 const iconPath = getBraveExtUrl('img/newtab/defaultTopSitesIcon')
 
 module.exports.pinnedTopSites = [
   {
-    'key': 'https://twitter.com/brave/|0',
+    'key': 'https://twitter.com/izi_asia/|0',
     'count': 0,
     'favicon': `${iconPath}/twitter.png`,
-    'location': 'https://twitter.com/brave/',
+    'location': 'https://twitter.com/izi_asia/',
     'themeColor': 'rgb(255, 255, 255)',
-    'title': 'Brave Software (@brave) | Twitter'
+    'title': 'IZI Global (@izi_asia) | Twitter'
   }
 ]
 
 module.exports.topSites = [
   {
-    'key': 'https://twitter.com/brave/|0',
+    'key': 'https://twitter.com/izi_asia/|0',
     'count': 0,
     'favicon': `${iconPath}/twitter.png`,
-    'location': 'https://twitter.com/brave',
+    'location': 'https://twitter.com/izi_asia',
     'themeColor': 'rgb(255, 255, 255)',
-    'title': 'Brave Software (@brave) | Twitter'
+    'title': 'IZI Global (@izi_asia) | Twitter'
   },
   {
-    'key': 'https://github.com/brave/|0',
+    'key': 'https://github.com/izi_asia/|0',
     'count': 0,
     'favicon': `${iconPath}/github.png`,
-    'location': 'https://github.com/brave/',
+    'location': 'https://github.com/izi_asia/',
     'themeColor': 'rgb(255, 255, 255)',
-    'title': 'Brave Software | GitHub'
+    'title': 'IZI Global | GitHub'
   },
   {
-    'key': 'https://youtube.com/bravesoftware/|0',
+    'key': 'https://youtube.com/iziasia/|0',
     'count': 0,
     'favicon': `${iconPath}/youtube.png`,
-    'location': 'https://youtube.com/bravesoftware/',
+    'location': 'https://youtube.com/iziasia/',
     'themeColor': 'rgb(255, 255, 255)',
-    'title': 'Brave Browser - YouTube'
+    'title': 'IZI Browser - YouTube'
   },
   {
-    'key': 'https://brave.com/|0',
+    'key': 'https://izi.asia/|0',
     'count': 0,
     'favicon': `${iconPath}/brave.ico`,
-    'location': 'https://brave.com/',
+    'location': 'https://izi.asia/',
     'themeColor': 'rgb(255, 255, 255)',
-    'title': 'Brave Software | Building a Better Web'
+    'title': 'IZI Global | Building a Better Web'
   },
   {
     'key': 'https://itunes.apple.com/app/brave-web-browser/id1052879175?mt=8|0',

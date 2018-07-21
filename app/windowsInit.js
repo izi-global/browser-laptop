@@ -39,7 +39,7 @@ const getBraveBinPath = () => {
 
 const getBraveDefaultsBinPath = () => {
   const appDir = getBraveBinPath()
-  return path.join(appDir, 'resources', 'braveDefaults.exe')
+  return path.join(appDir, 'resources', 'IZIDefaults.exe')
 }
 
 const getVisualElementsManifestPath = () => {

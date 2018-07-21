@@ -102,7 +102,7 @@ class ExtensionsTab extends ImmutableComponent {
           <span data-l10n-id='community'
             className={css(commonStyles.linkText)}
             onClick={aboutActions.createTabRequested.bind(null, {
-              url: 'https://community.brave.com/c/feature-requests/extension-requests'
+              url: 'https://community.izi.asia/c/feature-requests/extension-requests'
             }, true)}
           />.
         </HelpfulText>

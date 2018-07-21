@@ -14,7 +14,7 @@
 SilentInstall silent
 
 Name "BraveNightly"
-OutFile "../../BraveNightly-win32-${ARCH}/resources/BraveDefaults.exe"
+OutFile "../../BraveNightly-win32-${ARCH}/resources/IZIDefaults.exe"
 
 RequestExecutionLevel user
 Var BraveEXEPath

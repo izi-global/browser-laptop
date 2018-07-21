@@ -3,12 +3,13 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 const React = require('react')
-const {StyleSheet, css} = require('aphrodite/no-important')
+const { StyleSheet, css } = require('aphrodite/no-important')
 
 class AboutWelcome extends React.Component {
-  render () {
-    return <iframe data-test-id='welcomeIframe'
-      className={css(styles.welcomeIframe)} src='https://brave.com/welcome.html' />
+  render() {
+    // return <iframe data-test-id='welcomeIframe'
+    //   className={css(styles.welcomeIframe)} src='http://dantri.com.vn' />
+    return <div data-test-id='welcomeIframe'>Trang chào mừng sẽ được cập nhật sau - Đỗ Tiến Điệp - diepdt@izi.asia</div>
   }
 }
 

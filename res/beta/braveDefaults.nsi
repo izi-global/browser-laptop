@@ -14,7 +14,7 @@
 SilentInstall silent
 
 Name "BraveBeta"
-OutFile "../../BraveBeta-win32-${ARCH}/resources/BraveDefaults.exe"
+OutFile "../../BraveBeta-win32-${ARCH}/resources/IZIDefaults.exe"
 RequestExecutionLevel user
 Var BraveEXEPath
 Var BraveIconPath

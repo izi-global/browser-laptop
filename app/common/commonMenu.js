@@ -11,7 +11,7 @@ const settings = require('../../js/constants/settings')
 const {tabs} = require('../../js/constants/config')
 const {getSetting} = require('../../js/settings')
 const platformUtil = require('./lib/platformUtil')
-const communityURL = 'https://community.brave.com/'
+const communityURL = 'https://community.izi.asia/'
 const electron = require('electron')
 const menuUtil = require('./lib/menuUtil')
 

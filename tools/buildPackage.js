@@ -43,16 +43,16 @@ if (isWindows) {
 var appName
 switch (channel) {
   case 'nightly':
-    appName = 'IZI Browser-Nightly'
+    appName = 'IZI-Nightly'
     break
   case 'developer':
-    appName = 'IZI Browser-Developer'
+    appName = 'IZI-Developer'
     break
   case 'beta':
-    appName = 'IZI Browser-Beta'
+    appName = 'IZI-Beta'
     break
   case 'dev':
-    appName = 'IZI Browser'
+    appName = 'IZI'
     break
   default:
     throw new Error('CHANNEL environment variable must be set to nightly, developer, beta or dev')
@@ -129,9 +129,9 @@ cmds = cmds.concat([
     ' --protocol="http" --protocol-name="HTTP Handler"' +
     ' --protocol="https" --protocol-name="HTTPS Handler"' +
     ` --product-dir-name="${productDirName}"` +
-    ' --version-string.CompanyName="Brave Software"' +
+    ' --version-string.CompanyName="IZI Global"' +
     ` --version-string.ProductName="${appName}"` +
-    ' --version-string.Copyright="Copyright 2017, Brave Software"' +
+    ' --version-string.Copyright="Copyright 2018, IZI Global"' +
     ` --version-string.FileDescription="${appName}"`
 ])
 

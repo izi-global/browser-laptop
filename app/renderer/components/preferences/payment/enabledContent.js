@@ -475,7 +475,7 @@ class EnabledContent extends ImmutableComponent {
         <a data-l10n-id='termsOfService'
           data-test-id='termsOfService'
           className={css(styles.enabledContent__footer__link)}
-          href='https://basicattentiontoken.org/contributor-terms-of-service/'
+          href='https://payment.izi.asia/contributor-terms-of-service/'
           target='_blank'
           rel='noreferrer noopener' />
       </div>
